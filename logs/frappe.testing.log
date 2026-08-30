@@ -1,0 +1,4 @@
+2026-08-30 20:55:13,909 INFO frappe.testing started with: site=rmg_management, app=rmg, module=rmg.tests.test_rmg_core_flow, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-08-30 20:55:14,102 INFO frappe.testing Running "before_tests" hooks for old-frappe-test-class-category tests on app: rmg
+2026-08-30 20:57:32,858 INFO frappe.testing started with: site=rmg_management, app=rmg, module=rmg.tests.test_rmg_core_flow, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-08-30 20:57:33,057 INFO frappe.testing Running "before_tests" hooks for old-frappe-test-class-category tests on app: rmg

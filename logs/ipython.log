@@ -1,0 +1,9 @@
+2026-08-30 20:52:25,353 INFO ipython === bench console session ===
+2026-08-30 20:52:25,353 INFO ipython import frappe
+2026-08-30 20:52:25,353 INFO ipython print('Sales and Export DT exists:', frappe.db.exists('DocType','Letter Of Credit'))
+2026-08-30 20:52:25,353 INFO ipython print('Installed modules:', frappe.get_all('Module Def', pluck='name'))
+2026-08-30 20:52:25,353 INFO ipython print('App modules:', frappe.get_all('DocType', filters={'module':'Sales and Export'}, fields=['name']))
+2026-08-30 20:52:25,353 INFO ipython === session end ===
+2026-08-30 20:53:48,764 INFO ipython === bench console session ===
+2026-08-30 20:53:48,765 INFO ipython import frappe
+2026-08-30 20:53:48,765 INFO ipython === session end ===

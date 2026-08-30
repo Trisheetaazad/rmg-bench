@@ -1,0 +1,5 @@
+frappe
+erpnext
+rmg
+hrms
+payments

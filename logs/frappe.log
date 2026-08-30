@@ -1,0 +1,18 @@
+2026-06-05 21:07:34,819 ERROR frappe New Exception collected in error log
+Site: rmg_management
+Form Dict: {'doctype': 'Item Group', 'is_group': '0', 'item_group_name': 'Accessories ', 'parent': 'Accessories', 'is_root': 'false', 'cmd': 'frappe.desk.treeview.add_node'}
+2026-06-08 11:43:10,153 ERROR frappe New Exception collected in error log
+Site: rmg_management
+Form Dict: {'company': 'RMG Supplier Invoice and Puchase Order Management', 'cmd': 'erpnext.accounts.custom.address.get_shipping_address'}
+2026-06-08 11:43:10,190 ERROR frappe New Exception collected in error log
+Site: rmg_management
+Form Dict: {'company': 'RMG Supplier Invoice and Puchase Order Management', 'address': '', 'cmd': 'erpnext.accounts.custom.address.get_shipping_address'}
+2026-06-10 12:56:34,999 ERROR frappe New Exception collected in error log
+Site: rmg_management
+Form Dict: {'company': 'RMG Supplier Invoice and Puchase Order Management', 'cmd': 'erpnext.accounts.custom.address.get_shipping_address'}
+2026-06-10 12:56:35,035 ERROR frappe New Exception collected in error log
+Site: rmg_management
+Form Dict: {'company': 'RMG Supplier Invoice and Puchase Order Management', 'address': '', 'cmd': 'erpnext.accounts.custom.address.get_shipping_address'}
+2026-06-10 12:56:49,297 ERROR frappe New Exception collected in error log
+Site: rmg_management
+Form Dict: {'party': 'Test', 'party_type': 'Supplier', 'price_list': 'Standard Buying', 'posting_date': '2026-06-10', 'fetch_payment_terms_template': '1', 'currency': 'BDT', 'company': 'RMG Supplier Invoice and Puchase Order Management', 'doctype': 'Purchase Receipt', 'cmd': 'erpnext.accounts.party.get_party_details'}

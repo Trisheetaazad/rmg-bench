@@ -1,0 +1,123 @@
+2026-06-05 19:55:44,681 DEBUG cd rmg-bench && python3 -m venv env
+2026-06-05 19:55:46,306 DEBUG cd rmg-bench && /home/user/rmg-bench/env/bin/python -m pip install --quiet --upgrade pip
+2026-06-05 19:55:49,189 DEBUG cd rmg-bench && /home/user/rmg-bench/env/bin/python -m pip install --quiet wheel
+2026-06-05 19:55:49,790 LOG Getting frappe
+2026-06-05 19:55:49,790 DEBUG cd rmg-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2026-06-05 19:56:14,544 LOG Installing frappe
+2026-06-05 19:56:14,545 DEBUG cd /home/user/rmg-bench && /home/user/rmg-bench/env/bin/python -m pip install --quiet --upgrade -e /home/user/rmg-bench/apps/frappe 
+2026-06-05 19:57:05,014 DEBUG cd /home/user/rmg-bench/apps/frappe && yarn install --check-files
+2026-06-05 19:58:27,076 DEBUG cd /home/user/rmg-bench && sudo supervisorctl restart frappe:
+2026-06-05 19:58:27,199 WARNING cd /home/user/rmg-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2026-06-05 19:58:27,199 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2026-06-05 19:58:27,199 DEBUG cd rmg-bench && bench build
+2026-06-05 19:58:27,272 INFO /home/user/.local/bin/bench build
+2026-06-05 19:58:37,237 LOG setting up backups
+2026-06-05 19:58:37,249 LOG backups were set up
+2026-06-05 19:58:37,249 INFO Bench rmg-bench initialized
+2026-06-05 19:58:37,541 INFO A newer version of bench is available: 5.27.0 → 5.29.1
+2026-06-05 20:00:53,636 INFO /home/user/.local/bin/bench new-site rmg_management
+2026-06-05 20:01:33,949 INFO /home/user/.local/bin/bench use rmg_management
+2026-06-05 20:01:48,349 INFO /home/user/.local/bin/bench start
+2026-06-05 20:01:48,524 INFO /home/user/.local/bin/bench schedule
+2026-06-05 20:01:48,547 INFO /home/user/.local/bin/bench serve --port 8003
+2026-06-05 20:01:48,559 INFO /home/user/.local/bin/bench watch
+2026-06-05 20:01:48,559 INFO /home/user/.local/bin/bench worker
+2026-06-05 20:05:54,002 INFO /home/user/.local/bin/bench get-app payments
+2026-06-05 20:05:54,889 LOG Getting payments
+2026-06-05 20:05:54,889 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2026-06-05 20:05:56,516 LOG Installing payments
+2026-06-05 20:05:56,517 DEBUG cd /home/user/rmg-bench && /home/user/rmg-bench/env/bin/python -m pip install --quiet --upgrade -e /home/user/rmg-bench/apps/payments 
+2026-06-05 20:06:03,294 DEBUG bench build --app payments
+2026-06-05 20:06:03,369 INFO /home/user/.local/bin/bench build --app payments
+2026-06-05 20:06:04,732 DEBUG cd /home/user/rmg-bench && sudo supervisorctl restart frappe:
+2026-06-05 20:06:04,863 WARNING cd /home/user/rmg-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2026-06-05 20:06:04,864 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2026-06-05 20:06:05,028 INFO A newer version of bench is available: 5.27.0 → 5.29.1
+2026-06-05 20:06:05,129 INFO /home/user/.local/bin/bench get-app erpnext
+2026-06-05 20:06:05,960 LOG Getting erpnext
+2026-06-05 20:06:05,960 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2026-06-05 20:07:04,703 LOG Installing erpnext
+2026-06-05 20:07:04,703 DEBUG cd /home/user/rmg-bench && /home/user/rmg-bench/env/bin/python -m pip install --quiet --upgrade -e /home/user/rmg-bench/apps/erpnext 
+2026-06-05 20:07:14,198 DEBUG cd /home/user/rmg-bench/apps/erpnext && yarn install --check-files
+2026-06-05 20:08:07,073 DEBUG bench build --app erpnext
+2026-06-05 20:08:07,148 INFO /home/user/.local/bin/bench build --app erpnext
+2026-06-05 20:08:12,158 DEBUG cd /home/user/rmg-bench && sudo supervisorctl restart frappe:
+2026-06-05 20:08:12,277 WARNING cd /home/user/rmg-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2026-06-05 20:08:12,277 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2026-06-05 20:08:12,439 INFO A newer version of bench is available: 5.27.0 → 5.29.1
+2026-06-05 20:08:12,534 INFO /home/user/.local/bin/bench get-app hrms
+2026-06-05 20:08:13,441 LOG Getting hrms
+2026-06-05 20:08:13,441 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2026-06-05 20:08:40,414 LOG Installing hrms
+2026-06-05 20:08:40,414 DEBUG cd /home/user/rmg-bench && /home/user/rmg-bench/env/bin/python -m pip install --quiet --upgrade -e /home/user/rmg-bench/apps/hrms 
+2026-06-05 20:08:41,426 DEBUG cd /home/user/rmg-bench/apps/hrms && yarn install --check-files
+2026-06-05 20:08:51,122 DEBUG bench build --app hrms
+2026-06-05 20:08:51,202 INFO /home/user/.local/bin/bench build --app hrms
+2026-06-05 20:09:03,707 DEBUG cd /home/user/rmg-bench && sudo supervisorctl restart frappe:
+2026-06-05 20:09:03,824 WARNING cd /home/user/rmg-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2026-06-05 20:09:03,824 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2026-06-05 20:09:03,976 INFO A newer version of bench is available: 5.27.0 → 5.29.1
+2026-06-05 20:09:23,054 INFO /home/user/.local/bin/bench --site rmg_management install-app payments
+2026-06-05 20:09:25,033 INFO /home/user/.local/bin/bench --site rmg_management install-app erpnext
+2026-06-05 20:10:00,724 INFO /home/user/.local/bin/bench --site rmg_management install-app hrms
+2026-06-05 20:11:04,741 INFO /home/user/.local/bin/bench --site rmg_management migrate
+2026-06-05 20:11:18,106 INFO /home/user/.local/bin/bench start
+2026-06-05 20:11:18,260 INFO /home/user/.local/bin/bench serve --port 8003
+2026-06-05 20:11:18,273 INFO /home/user/.local/bin/bench worker
+2026-06-05 20:11:18,289 INFO /home/user/.local/bin/bench schedule
+2026-06-05 20:11:18,296 INFO /home/user/.local/bin/bench watch
+2026-06-05 20:11:27,070 INFO /home/user/.local/bin/bench new-site rmg_management
+2026-06-05 20:11:47,564 INFO /home/user/.local/bin/bench --site rmg_management migrate
+2026-06-05 20:20:43,895 INFO /home/user/.local/bin/bench new-app rmg
+2026-06-05 20:20:43,898 LOG creating new app rmg
+2026-06-05 20:22:11,974 LOG Installing rmg
+2026-06-05 20:22:11,974 DEBUG cd /home/user/rmg-bench && /home/user/rmg-bench/env/bin/python -m pip install --quiet --upgrade -e /home/user/rmg-bench/apps/rmg 
+2026-06-05 20:22:13,349 DEBUG bench build --app rmg
+2026-06-05 20:22:13,430 INFO /home/user/.local/bin/bench build --app rmg
+2026-06-05 20:22:42,245 DEBUG cd /home/user/rmg-bench && sudo supervisorctl restart frappe:
+2026-06-05 20:22:42,371 WARNING cd /home/user/rmg-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2026-06-05 20:22:42,371 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2026-06-05 20:22:43,056 INFO A newer version of bench is available: 5.27.0 → 5.29.1
+2026-06-05 20:22:43,149 INFO /home/user/.local/bin/bench --site rmg_management install-app rmg
+2026-06-05 20:23:01,805 INFO /home/user/.local/bin/bench restart
+2026-06-05 20:23:02,038 DEBUG cd /home/user/rmg-bench && sudo supervisorctl restart frappe:
+2026-06-05 20:23:02,161 WARNING cd /home/user/rmg-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2026-06-05 20:23:02,161 WARNING /home/user/.local/bin/bench restart executed with exit code 1
+2026-06-05 20:23:02,443 INFO A newer version of bench is available: 5.27.0 → 5.29.1
+2026-06-05 20:23:11,683 INFO /home/user/.local/bin/bench start
+2026-06-05 20:23:11,824 INFO /home/user/.local/bin/bench schedule
+2026-06-05 20:23:11,834 INFO /home/user/.local/bin/bench worker
+2026-06-05 20:23:11,857 INFO /home/user/.local/bin/bench serve --port 8003
+2026-06-05 20:23:11,858 INFO /home/user/.local/bin/bench watch
+2026-06-05 20:23:18,823 INFO /home/user/.local/bin/bench migrate
+2026-06-05 20:23:35,919 INFO /home/user/.local/bin/bench build
+2026-06-05 20:37:48,556 INFO /home/user/.local/bin/bench --site rmg_management set-config developer_mode 1
+2026-06-05 20:38:44,554 INFO /home/user/.local/bin/bench --site rmg_management clear-cache
+2026-06-10 12:56:01,131 INFO /home/user/.local/bin/bench start
+2026-06-10 12:56:01,309 INFO /home/user/.local/bin/bench schedule
+2026-06-10 12:56:01,311 INFO /home/user/.local/bin/bench watch
+2026-06-10 12:56:01,336 INFO /home/user/.local/bin/bench worker
+2026-06-10 12:56:01,343 INFO /home/user/.local/bin/bench serve --port 8003
+2026-07-16 00:00:01,536 INFO /home/user/.local/bin/bench --verbose --site all backup
+2026-08-30 20:52:04,253 INFO /home/user/.local/bin/bench --site rmg_management list-apps
+2026-08-30 20:52:05,437 INFO /home/user/.local/bin/bench --site rmg_management console -c import frappe; print(frappe.db.exists('Module Def', 'Sales and Export'))
+2026-08-30 20:52:24,510 INFO /home/user/.local/bin/bench --site rmg_management console
+2026-08-30 20:53:12,226 INFO /home/user/.local/bin/bench --site rmg_management test-app rmg --tests rmg.tests.test_rmg_core_flow
+2026-08-30 20:53:48,099 INFO /home/user/.local/bin/bench --site rmg_management console
+2026-08-30 20:54:34,181 INFO /home/user/.local/bin/bench --site rmg_management migrate
+2026-08-30 20:54:58,475 INFO /home/user/.local/bin/bench --help
+2026-08-30 20:55:05,824 INFO /home/user/.local/bin/bench --site rmg_management run-tests --app rmg --module rmg.tests.test_rmg_core_flow
+2026-08-30 20:55:12,924 INFO /home/user/.local/bin/bench --site rmg_management set-config allow_tests true
+2026-08-30 20:55:13,506 INFO /home/user/.local/bin/bench --site rmg_management run-tests --app rmg --module rmg.tests.test_rmg_core_flow
+2026-08-30 20:56:24,013 INFO /home/user/.local/bin/bench start
+2026-08-30 20:56:24,215 INFO /home/user/.local/bin/bench worker
+2026-08-30 20:56:24,226 INFO /home/user/.local/bin/bench watch
+2026-08-30 20:56:24,265 INFO /home/user/.local/bin/bench serve --port 8003
+2026-08-30 20:56:24,268 INFO /home/user/.local/bin/bench schedule
+2026-08-30 20:56:47,643 INFO /home/user/.local/bin/bench --site rmg_management migrate
+2026-08-30 20:57:14,178 INFO /home/user/.local/bin/bench --site rmg_management migrate
+2026-08-30 20:57:32,425 INFO /home/user/.local/bin/bench --site rmg_management run-tests --app rmg --module rmg.tests.test_rmg_core_flow
+2026-08-30 21:06:03,069 INFO /home/user/.local/bin/bench start
+2026-08-30 21:08:20,319 INFO /home/user/.local/bin/bench start
+2026-08-30 21:08:33,760 INFO /home/user/.local/bin/bench --site rmg_management migrate
+2026-08-30 21:10:52,027 INFO /home/user/.local/bin/bench start
