@@ -2,3 +2,20 @@
 2026-08-30 20:55:14,102 INFO frappe.testing Running "before_tests" hooks for old-frappe-test-class-category tests on app: rmg
 2026-08-30 20:57:32,858 INFO frappe.testing started with: site=rmg_management, app=rmg, module=rmg.tests.test_rmg_core_flow, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
 2026-08-30 20:57:33,057 INFO frappe.testing Running "before_tests" hooks for old-frappe-test-class-category tests on app: rmg
+2026-09-02 20:53:07,802 INFO frappe.testing started with: site=rmg_management, app=erpnext, module=erpnext.stock.doctype.purchase_receipt.test_purchase_receipt, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-09-02 20:53:09,132 ERROR frappe.testing Error discovering tests for erpnext.stock.doctype.purchase_receipt.test_purchase_receipt: Year start date or end date is overlapping with Fiscal Year 2025-2026. To avoid please set company
+2026-09-02 21:46:47,868 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_purchase_invoice_matching, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-09-02 21:48:02,576 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_purchase_invoice_matching, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-09-02 21:48:02,760 INFO frappe.testing Starting tests for app: rmg, category: unspecified-category
+2026-09-02 21:48:02,761 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatching
+2026-09-02 21:48:02,762 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingDiscrepancies
+2026-09-02 21:48:02,837 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingRateMismatch
+2026-09-02 21:48:39,412 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_purchase_invoice_matching, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-09-02 21:48:39,555 INFO frappe.testing Starting tests for app: rmg, category: unspecified-category
+2026-09-02 21:48:39,555 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatching
+2026-09-02 21:48:39,556 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingDiscrepancies
+2026-09-02 21:48:39,622 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingRateMismatch
+2026-09-02 22:04:38,725 INFO frappe.testing started with: site=rmg_management, module=rmg.rmg.tests.test_rmg_core_flow, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-09-02 22:04:38,865 ERROR frappe.testing Error discovering tests for rmg.rmg.tests.test_rmg_core_flow: No module named 'rmg.rmg'
+2026-09-02 22:04:46,191 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_rmg_core_flow, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-09-02 22:04:46,384 INFO frappe.testing Running "before_tests" hooks for old-frappe-test-class-category tests on app: rmg

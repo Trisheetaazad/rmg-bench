@@ -1128,3 +1128,17 @@ index creation(creation))
 			ROW_FORMAT=DYNAMIC
 			CHARACTER SET=utf8mb4
 			COLLATE=utf8mb4_unicode_ci
+2026-09-02 20:56:57,912 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAddress` ADD COLUMN `tax_category` varchar(140), ADD COLUMN `is_your_company_address` tinyint(4) NOT NULL DEFAULT 0
+2026-09-02 20:56:57,952 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContact` ADD COLUMN `is_billing_contact` tinyint(4) NOT NULL DEFAULT 0
+2026-09-02 21:08:51,520 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLetter Of Credit` ADD UNIQUE INDEX IF NOT EXISTS lc_number (`lc_number`)
+2026-09-02 21:49:01,965 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPurchase Invoice` ADD COLUMN `custom_match_status` varchar(140), ADD COLUMN `custom_difference_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2026-09-02 22:04:33,590 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayment Entry` ADD COLUMN `custom_voucher_type` varchar(140), ADD COLUMN `custom_cheque_withdrawer` varchar(140), ADD COLUMN `custom_withdrawer_designation` varchar(140)
+2026-09-02 22:04:33,618 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLetter Of Credit` ADD COLUMN `custom_utilized_amount` decimal(21,9) NOT NULL DEFAULT 0.0, ADD COLUMN `custom_remaining_amount` decimal(21,9) NOT NULL DEFAULT 0.0, ADD COLUMN `custom_utilization_percent` decimal(21,9) NOT NULL DEFAULT 0.0
+2026-09-02 23:06:02,575 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLC Allocation` ADD UNIQUE INDEX IF NOT EXISTS letter_of_credit (`letter_of_credit`)

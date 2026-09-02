@@ -121,3 +121,45 @@
 2026-08-30 21:08:20,319 INFO /home/user/.local/bin/bench start
 2026-08-30 21:08:33,760 INFO /home/user/.local/bin/bench --site rmg_management migrate
 2026-08-30 21:10:52,027 INFO /home/user/.local/bin/bench start
+2026-09-02 20:21:12,168 INFO /home/user/.local/bin/bench start
+2026-09-02 20:21:12,354 INFO /home/user/.local/bin/bench schedule
+2026-09-02 20:21:12,358 INFO /home/user/.local/bin/bench watch
+2026-09-02 20:21:12,399 INFO /home/user/.local/bin/bench serve --port 8003
+2026-09-02 20:21:12,403 INFO /home/user/.local/bin/bench worker
+2026-09-02 20:46:03,345 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_all --args ["Fiscal Year"] --kwargs {"fields":["name","year_start_date","year_end_date","disabled"]}
+2026-09-02 20:46:28,485 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.db.get_single_value --args ["System Settings","date_format"]
+2026-09-02 20:46:32,385 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_all --args ["Company"] --kwargs {"fields":["name"]}
+2026-09-02 20:53:07,425 INFO /home/user/.local/bin/bench --site rmg_management run-tests --app erpnext --module erpnext.stock.doctype.purchase_receipt.test_purchase_receipt
+2026-09-02 20:56:14,585 INFO /home/user/.local/bin/bench --site rmg_management list-apps
+2026-09-02 20:56:23,364 INFO /home/user/.local/bin/bench --site rmg_management migrate
+2026-09-02 20:56:48,350 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.db.has_column --args ["Address", "is_your_company_address"]
+2026-09-02 20:56:50,221 INFO /home/user/.local/bin/bench --site rmg_management execute erpnext.accounts.custom.address.get_shipping_address --args ["RMG Supplier Invoice and Puchase Order Management", ""]
+2026-09-02 20:56:57,047 INFO /home/user/.local/bin/bench --site rmg_management execute erpnext.setup.install.create_address_and_contact_custom_fields
+2026-09-02 20:57:02,170 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.db.has_column --args ["Address", "is_your_company_address"]
+2026-09-02 20:57:04,047 INFO /home/user/.local/bin/bench --site rmg_management execute erpnext.accounts.custom.address.get_shipping_address --args ["RMG Supplier Invoice and Puchase Order Management", ""]
+2026-09-02 21:29:46,577 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_all --kwargs {"doctype":"Custom Field","filters":{"dt":"Purchase Invoice"},"fields":["fieldname","label","fieldtype","options"],"order_by":"idx"}
+2026-09-02 21:46:47,524 INFO /home/user/.local/bin/bench --site rmg_management run-tests --module rmg.tests.test_purchase_invoice_matching
+2026-09-02 21:47:07,623 INFO /home/user/.local/bin/bench --site rmg_management run-tests --module rmg.tests.test_purchase_invoice_matching --verbose
+2026-09-02 21:48:02,192 INFO /home/user/.local/bin/bench --site rmg_management run-tests --module rmg.tests.test_purchase_invoice_matching
+2026-09-02 21:48:39,073 INFO /home/user/.local/bin/bench --site rmg_management run-tests --module rmg.tests.test_purchase_invoice_matching
+2026-09-02 21:48:45,354 INFO /home/user/.local/bin/bench --site rmg_management migrate
+2026-09-02 21:49:07,789 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.db.exists --kwargs {"doctype":"Custom Field","filters":{"dt":"Purchase Invoice","fieldname":"custom_match_status"}}
+2026-09-02 21:49:13,140 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.db.exists --args ["Custom Field", {"dt": "Purchase Invoice", "fieldname": "custom_match_status"}]
+2026-09-02 21:49:14,013 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.db.exists --args ["Custom Field", {"dt": "Purchase Invoice", "fieldname": "custom_difference_amount"}]
+2026-09-02 22:04:18,750 INFO /home/user/.local/bin/bench --site rmg_management migrate
+2026-09-02 22:04:38,348 INFO /home/user/.local/bin/bench --site rmg_management run-tests --module rmg.rmg.tests.test_rmg_core_flow
+2026-09-02 22:04:45,840 INFO /home/user/.local/bin/bench --site rmg_management run-tests --module rmg.tests.test_rmg_core_flow
+2026-09-02 22:04:58,720 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_all --args ["Custom Field"] --kwargs {"filters":{"name":["in",["Payment Entry-custom_voucher_type","Payment Entry-custom_cheque_withdrawer","Payment Entry-custom_withdrawer_designation","Letter Of Credit-custom_utilized_amount","Letter Of Credit-custom_remaining_amount","Letter Of Credit-custom_utilization_percent"]]},"fields":["name","dt","fieldname"]}
+2026-09-02 22:05:03,739 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_all --args ["Letter Of Credit"] --kwargs {"fields":["name","status","total_value","custom_utilized_amount","custom_remaining_amount","custom_utilization_percent"],"limit_page_length":20}
+2026-09-02 22:05:38,220 INFO /home/user/.local/bin/bench --site rmg_management migrate
+2026-09-02 22:05:53,831 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_all --args ["Letter Of Credit"] --kwargs {"fields":["name","status","total_value","custom_utilized_amount","custom_remaining_amount","custom_utilization_percent"],"limit_page_length":20}
+2026-09-02 22:12:16,633 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_meta --args ["Payment Entry"]
+2026-09-02 22:12:25,377 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_all --args ["Custom Field"] --kwargs {"filters":{"dt":"Payment Entry","fieldname":["in",["custom_voucher_type","custom_cheque_withdrawer","custom_withdrawer_designation"]]},"fields":["fieldname","label","fieldtype","options","reqd","insert_after"]}
+2026-09-02 22:12:40,415 INFO /home/user/.local/bin/bench --site rmg_management execute rmg.rmg_management.finance_controls.validate_payment_entry --args [{"custom_voucher_type":"Contra Entry","mode_of_payment":"Cheque","custom_cheque_withdrawer":"Finance Officer","custom_withdrawer_designation":"Manager"}]
+2026-09-02 22:12:52,603 INFO /home/user/.local/bin/bench --site rmg_management execute rmg.rmg_management.finance_controls.validate_payment_entry --args [{"custom_voucher_type":"Contra Entry","mode_of_payment":"Cheque","custom_cheque_withdrawer":"Finance Officer","custom_withdrawer_designation":"Manager"}]
+2026-09-02 23:07:56,789 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_all --args ["LC Allocation"] --kwargs {"fields":["name","letter_of_credit","allocated_amount","allocation_status","creation","modified"],"order_by":"modified desc","limit_page_length":10}
+2026-09-02 23:16:24,268 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_doc --args ["LC Allocation", "10000"] --kwargs {}
+2026-09-02 23:16:41,473 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.db.set_value --args ["LC Allocation", "10000", "allocation_status", "Allocated"]
+2026-09-02 23:16:53,606 INFO /home/user/.local/bin/bench --site rmg_management execute rmg.rmg_management.finance_controls.recalculate_lc_utilization --args ["10000"]
+2026-09-02 23:16:54,303 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_all --args ["Letter Of Credit"] --kwargs {"filters":{"name":"10000"},"fields":["name","status","total_value","custom_utilized_amount","custom_remaining_amount","custom_utilization_percent"]}
+2026-09-02 23:16:54,999 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_all --args ["LC Allocation"] --kwargs {"filters":{"name":"10000"},"fields":["name","letter_of_credit","allocated_amount","allocation_status"]}
