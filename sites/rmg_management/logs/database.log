@@ -1142,3 +1142,7 @@ ALTER TABLE `tabPayment Entry` ADD COLUMN `custom_voucher_type` varchar(140), AD
 ALTER TABLE `tabLetter Of Credit` ADD COLUMN `custom_utilized_amount` decimal(21,9) NOT NULL DEFAULT 0.0, ADD COLUMN `custom_remaining_amount` decimal(21,9) NOT NULL DEFAULT 0.0, ADD COLUMN `custom_utilization_percent` decimal(21,9) NOT NULL DEFAULT 0.0
 2026-09-02 23:06:02,575 WARNING database DDL Query made to DB:
 ALTER TABLE `tabLC Allocation` ADD UNIQUE INDEX IF NOT EXISTS letter_of_credit (`letter_of_credit`)
+2026-09-20 21:30:54,206 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLC Allocation` MODIFY `allocation_status` varchar(140) DEFAULT 'Allocated'
+2026-09-20 21:30:54,220 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLC Allocation` DROP INDEX `letter_of_credit`

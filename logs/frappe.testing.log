@@ -19,3 +19,80 @@
 2026-09-02 22:04:38,865 ERROR frappe.testing Error discovering tests for rmg.rmg.tests.test_rmg_core_flow: No module named 'rmg.rmg'
 2026-09-02 22:04:46,191 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_rmg_core_flow, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
 2026-09-02 22:04:46,384 INFO frappe.testing Running "before_tests" hooks for old-frappe-test-class-category tests on app: rmg
+2026-09-20 21:28:44,809 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_functional_table_10_1, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-09-20 21:28:44,939 INFO frappe.testing Running "before_tests" hooks for old-frappe-test-class-category tests on app: rmg
+2026-09-20 21:29:45,827 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_functional_table_10_1, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=True, debug=False, selected_categories=[]
+2026-09-20 21:30:04,096 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_functional_table_10_1, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=True, debug=False, selected_categories=[]
+2026-09-20 21:30:35,180 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_functional_table_10_1, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=True, debug=False, selected_categories=[]
+2026-09-20 21:30:35,394 INFO frappe.testing Starting tests for app: rmg, category: integration
+2026-09-20 21:30:35,669 INFO frappe.testing rmg.tests.test_functional_table_10_1.TestFunctionalTable
+2026-09-20 21:31:16,558 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_functional_table_10_1, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=True, debug=False, selected_categories=[]
+2026-09-20 21:31:16,677 INFO frappe.testing Starting tests for app: rmg, category: integration
+2026-09-20 21:31:16,886 INFO frappe.testing rmg.tests.test_functional_table_10_1.TestFunctionalTable
+2026-09-20 21:32:21,139 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_functional_table_10_1, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=True, debug=False, selected_categories=[]
+2026-09-20 21:32:21,276 INFO frappe.testing Starting tests for app: rmg, category: integration
+2026-09-20 21:32:21,423 INFO frappe.testing rmg.tests.test_functional_table_10_1.TestFunctionalTable
+2026-09-20 21:32:44,697 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_functional_table_10_1, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=True, debug=False, selected_categories=[]
+2026-09-20 21:32:44,875 INFO frappe.testing Starting tests for app: rmg, category: integration
+2026-09-20 21:32:44,976 INFO frappe.testing rmg.tests.test_functional_table_10_1.TestFunctionalTable
+2026-09-20 21:33:07,935 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_functional_table_10_1, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=True, debug=False, selected_categories=[]
+2026-09-20 21:33:08,119 INFO frappe.testing Starting tests for app: rmg, category: integration
+2026-09-20 21:33:08,270 INFO frappe.testing rmg.tests.test_functional_table_10_1.TestFunctionalTable
+2026-09-20 21:33:23,174 INFO frappe.testing started with: site=rmg_management, app=rmg, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=True, debug=False, selected_categories=[]
+2026-09-20 21:33:23,338 INFO frappe.testing Starting tests for app: rmg, category: integration
+2026-09-20 21:33:23,340 INFO frappe.testing rmg.tests.test_rmg_core_flow.TestRmgCoreFlow
+2026-09-20 21:33:23,724 INFO frappe.testing rmg.tests.test_functional_table_10_1.TestFunctionalTable
+2026-09-20 21:33:24,963 INFO frappe.testing Starting tests for app: rmg, category: unspecified-category
+2026-09-20 21:33:24,964 INFO frappe.testing rmg.tests.test_finance_controls.TestPaymentEntryAccepted
+2026-09-20 21:33:24,964 INFO frappe.testing rmg.tests.test_finance_controls.TestPaymentEntryRefused
+2026-09-20 21:33:24,966 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestAcceptedQuantity
+2026-09-20 21:33:24,966 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatching
+2026-09-20 21:33:24,967 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingDiscrepancies
+2026-09-20 21:33:24,967 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingRateMismatch
+2026-09-20 21:40:10,741 INFO frappe.testing started with: site=rmg_management, module=rmg.tests.test_functional_table_10_1, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=True, debug=False, selected_categories=[]
+2026-09-20 21:40:10,876 INFO frappe.testing Starting tests for app: rmg, category: integration
+2026-09-20 21:40:10,982 INFO frappe.testing rmg.tests.test_functional_table_10_1.TestFunctionalTable
+2026-09-20 21:40:53,321 INFO frappe.testing started with: site=rmg_management, app=rmg, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=True, debug=False, selected_categories=[]
+2026-09-20 21:40:53,480 INFO frappe.testing Starting tests for app: rmg, category: integration
+2026-09-20 21:40:53,485 INFO frappe.testing rmg.tests.test_rmg_core_flow.TestRmgCoreFlow
+2026-09-20 21:40:53,828 INFO frappe.testing rmg.tests.test_functional_table_10_1.TestFunctionalTable
+2026-09-20 21:40:54,889 INFO frappe.testing Starting tests for app: rmg, category: unspecified-category
+2026-09-20 21:40:54,889 INFO frappe.testing rmg.tests.test_finance_controls.TestPaymentEntryAccepted
+2026-09-20 21:40:54,890 INFO frappe.testing rmg.tests.test_finance_controls.TestPaymentEntryRefused
+2026-09-20 21:40:54,892 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestAcceptedQuantity
+2026-09-20 21:40:54,892 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatching
+2026-09-20 21:40:54,893 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingDiscrepancies
+2026-09-20 21:40:54,893 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingRateMismatch
+2026-09-20 21:54:22,397 INFO frappe.testing started with: site=rmg_management, app=rmg, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=True, debug=False, selected_categories=[]
+2026-09-20 21:54:22,516 INFO frappe.testing Starting tests for app: rmg, category: integration
+2026-09-20 21:54:22,521 INFO frappe.testing rmg.tests.test_rmg_core_flow.TestRmgCoreFlow
+2026-09-20 21:54:23,025 INFO frappe.testing rmg.tests.test_functional_table_10_1.TestFunctionalTable
+2026-09-20 21:54:24,464 INFO frappe.testing Starting tests for app: rmg, category: unspecified-category
+2026-09-20 21:54:24,465 INFO frappe.testing rmg.tests.test_finance_controls.TestPaymentEntryAccepted
+2026-09-20 21:54:24,466 INFO frappe.testing rmg.tests.test_finance_controls.TestPaymentEntryRefused
+2026-09-20 21:54:24,468 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestAcceptedQuantity
+2026-09-20 21:54:24,468 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatching
+2026-09-20 21:54:24,469 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingDiscrepancies
+2026-09-20 21:54:24,469 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingRateMismatch
+2026-09-20 21:54:52,454 INFO frappe.testing started with: site=rmg_management, app=rmg, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=True, debug=False, selected_categories=[]
+2026-09-20 21:54:52,601 INFO frappe.testing Starting tests for app: rmg, category: integration
+2026-09-20 21:54:52,605 INFO frappe.testing rmg.tests.test_rmg_core_flow.TestRmgCoreFlow
+2026-09-20 21:54:53,114 INFO frappe.testing rmg.tests.test_functional_table_10_1.TestFunctionalTable
+2026-09-20 21:54:54,342 INFO frappe.testing Starting tests for app: rmg, category: unspecified-category
+2026-09-20 21:54:54,342 INFO frappe.testing rmg.tests.test_finance_controls.TestPaymentEntryAccepted
+2026-09-20 21:54:54,343 INFO frappe.testing rmg.tests.test_finance_controls.TestPaymentEntryRefused
+2026-09-20 21:54:54,344 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestAcceptedQuantity
+2026-09-20 21:54:54,344 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatching
+2026-09-20 21:54:54,345 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingDiscrepancies
+2026-09-20 21:54:54,346 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingRateMismatch
+2026-09-20 21:55:44,281 INFO frappe.testing started with: site=rmg_management, app=rmg, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=True, debug=False, selected_categories=[]
+2026-09-20 21:55:44,451 INFO frappe.testing Starting tests for app: rmg, category: integration
+2026-09-20 21:55:44,452 INFO frappe.testing rmg.tests.test_rmg_core_flow.TestRmgCoreFlow
+2026-09-20 21:55:44,926 INFO frappe.testing rmg.tests.test_functional_table_10_1.TestFunctionalTable
+2026-09-20 21:55:45,844 INFO frappe.testing Starting tests for app: rmg, category: unspecified-category
+2026-09-20 21:55:45,844 INFO frappe.testing rmg.tests.test_finance_controls.TestPaymentEntryAccepted
+2026-09-20 21:55:45,846 INFO frappe.testing rmg.tests.test_finance_controls.TestPaymentEntryRefused
+2026-09-20 21:55:45,847 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestAcceptedQuantity
+2026-09-20 21:55:45,848 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatching
+2026-09-20 21:55:45,848 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingDiscrepancies
+2026-09-20 21:55:45,849 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingRateMismatch
