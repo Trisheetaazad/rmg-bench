@@ -4,3 +4,39 @@ Backup Summary for rmg_management at 2026-07-18 20:12:29.874300
 Config  : /home/user/rmg-bench/sites/rmg_management/private/backups/20260718_201211-rmg_management-site_config_backup.json 149.0B
 Database: /home/user/rmg-bench/sites/rmg_management/private/backups/20260718_201211-rmg_management-database.sql.gz 1.1MiB
 Backup for Site rmg_management has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_5a138686e12f3dc3 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5a138686e12f3dc3 | /usr/bin/gzip >> ./rmg_management/private/backups/20260902_233002-rmg_management-database.sql.gz
+
+Backup Summary for rmg_management at 2026-09-02 23:30:04.401618
+Config  : /home/user/rmg-bench/sites/rmg_management/private/backups/20260902_233002-rmg_management-site_config_backup.json 171.0B
+Database: /home/user/rmg-bench/sites/rmg_management/private/backups/20260902_233002-rmg_management-database.sql.gz 1.2MiB
+Backup for Site rmg_management has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_5a138686e12f3dc3 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5a138686e12f3dc3 | /usr/bin/gzip >> ./rmg_management/private/backups/20260905_233002-rmg_management-database.sql.gz
+
+Backup Summary for rmg_management at 2026-09-05 23:30:04.215713
+Config  : /home/user/rmg-bench/sites/rmg_management/private/backups/20260905_233002-rmg_management-site_config_backup.json 171.0B
+Database: /home/user/rmg-bench/sites/rmg_management/private/backups/20260905_233002-rmg_management-database.sql.gz 1.2MiB
+Backup for Site rmg_management has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_5a138686e12f3dc3 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5a138686e12f3dc3 | /usr/bin/gzip >> ./rmg_management/private/backups/20260906_233001-rmg_management-database.sql.gz
+
+Backup Summary for rmg_management at 2026-09-06 23:30:03.507837
+Config  : /home/user/rmg-bench/sites/rmg_management/private/backups/20260906_233001-rmg_management-site_config_backup.json 171.0B
+Database: /home/user/rmg-bench/sites/rmg_management/private/backups/20260906_233001-rmg_management-database.sql.gz 1.2MiB
+Backup for Site rmg_management has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_5a138686e12f3dc3 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5a138686e12f3dc3 | /usr/bin/gzip >> ./rmg_management/private/backups/20260907_233002-rmg_management-database.sql.gz
+
+Backup Summary for rmg_management at 2026-09-07 23:30:04.734374
+Config  : /home/user/rmg-bench/sites/rmg_management/private/backups/20260907_233002-rmg_management-site_config_backup.json 171.0B
+Database: /home/user/rmg-bench/sites/rmg_management/private/backups/20260907_233002-rmg_management-database.sql.gz 1.2MiB
+Backup for Site rmg_management has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_5a138686e12f3dc3 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5a138686e12f3dc3 | /usr/bin/gzip >> ./rmg_management/private/backups/20260912_113002-rmg_management-database.sql.gz
+
+Backup Summary for rmg_management at 2026-09-12 11:30:06.321669
+Config  : /home/user/rmg-bench/sites/rmg_management/private/backups/20260912_113002-rmg_management-site_config_backup.json 171.0B
+Database: /home/user/rmg-bench/sites/rmg_management/private/backups/20260912_113002-rmg_management-database.sql.gz 1.2MiB
+Backup for Site rmg_management has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_5a138686e12f3dc3 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _5a138686e12f3dc3 | /usr/bin/gzip >> ./rmg_management/private/backups/20260913_173002-rmg_management-database.sql.gz
+
+Backup Summary for rmg_management at 2026-09-13 17:30:04.173650
+Config  : /home/user/rmg-bench/sites/rmg_management/private/backups/20260913_173002-rmg_management-site_config_backup.json 171.0B
+Database: /home/user/rmg-bench/sites/rmg_management/private/backups/20260913_173002-rmg_management-database.sql.gz 1.2MiB
+Backup for Site rmg_management has been successfully completed

@@ -163,3 +163,9 @@
 2026-09-02 23:16:53,606 INFO /home/user/.local/bin/bench --site rmg_management execute rmg.rmg_management.finance_controls.recalculate_lc_utilization --args ["10000"]
 2026-09-02 23:16:54,303 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_all --args ["Letter Of Credit"] --kwargs {"filters":{"name":"10000"},"fields":["name","status","total_value","custom_utilized_amount","custom_remaining_amount","custom_utilization_percent"]}
 2026-09-02 23:16:54,999 INFO /home/user/.local/bin/bench --site rmg_management execute frappe.get_all --args ["LC Allocation"] --kwargs {"filters":{"name":"10000"},"fields":["name","letter_of_credit","allocated_amount","allocation_status"]}
+2026-09-03 00:00:01,867 INFO /home/user/.local/bin/bench --verbose --site all backup
+2026-09-06 00:00:01,167 INFO /home/user/.local/bin/bench --verbose --site all backup
+2026-09-07 00:00:01,382 INFO /home/user/.local/bin/bench --verbose --site all backup
+2026-09-08 00:00:01,897 INFO /home/user/.local/bin/bench --verbose --site all backup
+2026-09-12 12:00:01,828 INFO /home/user/.local/bin/bench --verbose --site all backup
+2026-09-13 18:00:01,837 INFO /home/user/.local/bin/bench --verbose --site all backup

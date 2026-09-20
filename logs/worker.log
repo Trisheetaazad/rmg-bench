@@ -12802,3 +12802,5 @@
 2026-09-02 23:48:03,549 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search', 'scheduled_jo..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='rmg_management', user='Administrator') job in 0:00:00.164303s on worker a076aac92dd34792b84bdcff9ff986d1
 2026-09-02 23:48:03,549 home-user-rmg-bench:default: Job OK (rmg_management||scheduled_job||ollr66uo60)
 2026-09-02 23:48:03,549 Result is kept for 600 seconds
+2026-09-02 23:49:36,742 Worker a076aac92dd34792b84bdcff9ff986d1 [PID 14602]: warm shut down requested
+2026-09-02 23:49:36,745 Worker a076aac92dd34792b84bdcff9ff986d1: unsubscribing from channel rq:pubsub:a076aac92dd34792b84bdcff9ff986d1
