@@ -210,3 +210,4 @@
 2026-09-21 20:21:56,121 INFO /home/user/.local/bin/bench --site rmg_management execute rmg.tests.seed_demo_data.seed --kwargs {'reset': True}
 2026-09-21 20:39:18,778 INFO /home/user/.local/bin/bench --site rmg_management migrate
 2026-09-21 20:39:36,741 INFO /home/user/.local/bin/bench --site rmg_management run-tests --skip-before-tests --app rmg
+2026-09-21 21:39:20,077 INFO /home/user/.local/bin/bench --site rmg_management run-tests --skip-before-tests --app rmg
