@@ -225,3 +225,16 @@
 2026-09-21 22:25:21,874 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatching
 2026-09-21 22:25:21,875 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingDiscrepancies
 2026-09-21 22:25:21,877 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingRateMismatch
+2026-09-21 22:28:59,727 INFO frappe.testing started with: site=rmg_management, app=rmg, verbose=False, tests=(), force=False, profile=False, failfast=False, skip_before_tests=False, debug=False, selected_categories=[]
+2026-09-21 22:28:59,849 INFO frappe.testing Running "before_tests" hooks for integration tests on app: rmg
+2026-09-21 22:28:59,849 INFO frappe.testing Running "before_tests" hook function rmg.tests.environment.before_tests
+2026-09-21 22:28:59,896 INFO frappe.testing Starting tests for app: rmg, category: integration
+2026-09-21 22:28:59,897 INFO frappe.testing rmg.tests.test_rmg_core_flow.TestRmgCoreFlow
+2026-09-21 22:29:00,248 INFO frappe.testing rmg.tests.test_functional_table_10_1.TestFunctionalTable
+2026-09-21 22:29:01,631 INFO frappe.testing Starting tests for app: rmg, category: unspecified-category
+2026-09-21 22:29:01,632 INFO frappe.testing rmg.tests.test_finance_controls.TestPaymentEntryAccepted
+2026-09-21 22:29:01,633 INFO frappe.testing rmg.tests.test_finance_controls.TestPaymentEntryRefused
+2026-09-21 22:29:01,634 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestAcceptedQuantity
+2026-09-21 22:29:01,634 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatching
+2026-09-21 22:29:01,635 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingDiscrepancies
+2026-09-21 22:29:01,636 INFO frappe.testing rmg.tests.test_purchase_invoice_matching.TestPurchaseInvoiceMatchingRateMismatch
