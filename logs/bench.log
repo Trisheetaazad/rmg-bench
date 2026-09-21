@@ -219,3 +219,14 @@
 2026-09-21 21:47:11,071 INFO /home/user/.local/bin/bench --site rmg_management run-tests --skip-before-tests --app rmg
 2026-09-21 21:48:20,976 INFO /home/user/.local/bin/bench --site rmg_management migrate
 2026-09-21 21:48:30,226 INFO /home/user/.local/bin/bench --site rmg_management run-tests --skip-before-tests --app rmg
+2026-09-21 21:49:36,827 INFO /home/user/.local/bin/bench --site rmg_management execute rmg.tests.seed_demo_data.seed --kwargs {'reset': True}
+2026-09-21 22:02:20,167 INFO /home/user/.local/bin/bench start
+2026-09-21 22:02:28,608 INFO /home/user/.local/bin/bench start
+2026-09-21 22:06:46,825 INFO /home/user/.local/bin/bench --site rmg_management run-tests --app rmg
+2026-09-21 22:25:12,963 INFO /home/user/.local/bin/bench --site rmg_management execute rmg.tests.demo_scenarios.run
+2026-09-21 22:25:13,725 INFO /home/user/.local/bin/bench --site rmg_management execute rmg.tests.demo_scenarios.run --kwargs {'section': 'match'}
+2026-09-21 22:25:14,262 INFO /home/user/.local/bin/bench --site rmg_management execute rmg.tests.demo_scenarios.run --kwargs {'section': 'payment', 'color': False}
+2026-09-21 22:25:15,058 INFO /home/user/.local/bin/bench --site rmg_management run-tests --module rmg.tests.test_functional_table_10_1
+2026-09-21 22:25:18,055 INFO /home/user/.local/bin/bench --site rmg_management run-tests --module rmg.tests.test_purchase_invoice_matching
+2026-09-21 22:25:18,897 INFO /home/user/.local/bin/bench --site rmg_management run-tests --module rmg.tests.test_finance_controls
+2026-09-21 22:25:19,688 INFO /home/user/.local/bin/bench --site rmg_management run-tests --app rmg
