@@ -7,3 +7,23 @@
 2026-08-30 20:53:48,764 INFO ipython === bench console session ===
 2026-08-30 20:53:48,765 INFO ipython import frappe
 2026-08-30 20:53:48,765 INFO ipython === session end ===
+2026-09-21 21:43:57,163 INFO ipython === bench console session ===
+2026-09-21 21:43:57,165 INFO ipython import frappe
+2026-09-21 21:43:57,165 INFO ipython def attempt(label, **f):
+    pe = frappe.new_doc("Payment Entry")
+    pe.update(dict(payment_type="Pay", company=frappe.db.get_value("Company", {}, "name"), party_type="Supplier", party="Unitex Fabrics Ltd", posting_date=frappe.utils.nowdate(), mode_of_payment="Cheque", custom_voucher_type="Bank Entry", paid_amount=1200000, received_amount=1200000, reference_no="CHQ-0001", reference_date=frappe.utils.nowdate()))
+    pe.update(f)
+    pe.setup_party_account_field(); pe.set_missing_values()
+    try:
+        pe.insert(ignore_permissions=True); print("RESULT", label, "-> SAVED", pe.name, "paid_from=", pe.paid_from)
+        try:
+            pe.submit(); print("RESULT", label, "-> SUBMITTED")
+        except Exception as e: print("RESULT", label, "-> submit blocked:", frappe.utils.strip_html(str(e))[:160])
+    except Exception as e:
+        print("RESULT", label, "-> REFUSED:", frappe.utils.strip_html(str(e))[:160])
+print("STEP start")
+2026-09-21 21:43:57,165 INFO ipython attempt("blank withdrawer")
+2026-09-21 21:43:57,165 INFO ipython attempt("name only", custom_cheque_withdrawer="Rafiqul Islam")
+2026-09-21 21:43:57,165 INFO ipython attempt("both filled", custom_cheque_withdrawer="Rafiqul Islam", custom_withdrawer_designation="Accounts Officer")
+2026-09-21 21:43:57,165 INFO ipython frappe.db.rollback()
+2026-09-21 21:43:57,165 INFO ipython === session end ===

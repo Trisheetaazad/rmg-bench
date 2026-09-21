@@ -211,3 +211,11 @@
 2026-09-21 20:39:18,778 INFO /home/user/.local/bin/bench --site rmg_management migrate
 2026-09-21 20:39:36,741 INFO /home/user/.local/bin/bench --site rmg_management run-tests --skip-before-tests --app rmg
 2026-09-21 21:39:20,077 INFO /home/user/.local/bin/bench --site rmg_management run-tests --skip-before-tests --app rmg
+2026-09-21 21:43:56,364 INFO /home/user/.local/bin/bench --site rmg_management console
+2026-09-21 21:44:15,424 INFO /home/user/.local/bin/bench --site rmg_management execute rmg._scratch_probe.run
+2026-09-21 21:46:22,828 INFO /home/user/.local/bin/bench --site rmg_management execute rmg._scratch_probe.run
+2026-09-21 21:46:41,416 INFO /home/user/.local/bin/bench --site rmg_management execute rmg._scratch_probe.run
+2026-09-21 21:47:02,246 INFO /home/user/.local/bin/bench --site rmg_management migrate
+2026-09-21 21:47:11,071 INFO /home/user/.local/bin/bench --site rmg_management run-tests --skip-before-tests --app rmg
+2026-09-21 21:48:20,976 INFO /home/user/.local/bin/bench --site rmg_management migrate
+2026-09-21 21:48:30,226 INFO /home/user/.local/bin/bench --site rmg_management run-tests --skip-before-tests --app rmg
